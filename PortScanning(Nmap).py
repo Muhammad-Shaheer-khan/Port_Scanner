@@ -25,7 +25,7 @@ def callBanner(IP, port):
     bannerGrab(IP, port)
 
 while True:
-    # try:
+    try:
         print("\n"+"*"*37)
         choice = int(input("1. Port Scanning.\n2. Banner Grabbing.\n\nEnter(1/2):\t"))
         if choice == 1:
@@ -58,8 +58,8 @@ while True:
         else:
             print("Am I looking fool !. \n\tTry again")
         
-    # except:
-    #     print("please give valid info. Try again\nHint: Check your IP is valid or inside your network/ Check given input.\n")
+    except:
+        print("please give valid info. Try again\nHint: Check your IP is valid or inside your network/ Check given input.\n")
 
 
 
